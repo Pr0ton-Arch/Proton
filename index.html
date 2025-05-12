@@ -3,76 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pr0ton</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #0f0; /* Green text for matrix effect */
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Keep canvas behind other elements */
-        }
-
-        .headline {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 20%;
-        }
-
-        .search-card {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .search-form {
-            display: flex;
-            align-items: center;
-        }
-
-        .form__input {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            width: 300px;
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-        }
-
-        .form__input:focus {
-            outline: none;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-        }
-    </style>
+    <title>Google</title>
+    <link rel="icon" href="google.webp" type="image/webp">
 </head>
 <body>
-    <canvas id="matrix"></canvas>
-    <main>
-        <div class="headline">Pr0ton</div>
-        <div class="search-card">
-            <form id="uv-form" class="search-form">
-                <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s&ia=web" type="hidden" />
-                <input id="uv-address" type="text" placeholder="Search Unblocked" class="form__input" autocomplete="off" />
-            </form>
-        </div>
-    </main>
-
-    <script src="static/uv/uv.bundle.js" defer></script>
-    <script src="static/uv/uv.config.js" defer></script>
-    <script src="static/register-sw.js" defer></script>
-    <script src="static/search.js" defer></script>
-    <script src="static/index.js" defer></script>
+    <iframe src="/source.html" style="width: 100%; height: 100vh; border: none;"></iframe>
 </body>
 </html>
